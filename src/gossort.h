@@ -5,7 +5,7 @@
 
 #define FDS_SORT_VERSION "0.0.1"
 
-namespace fds {
+namespace gos {
 namespace sort {
 
 namespace real {

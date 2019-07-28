@@ -1,6 +1,6 @@
-#include "arduinosort.h"
+#include "gossort.h"
 
-namespace fds {
+namespace gos {
 namespace sort {
 static uint8_t i, j;
 static uint8_t tr;
