@@ -1,4 +1,4 @@
-add_library(libarduinosort STATIC src/arduinosort.cpp src/arduinosort.h)
+add_library(libarduinosort STATIC src/gossort.cpp src/gossort.h)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
