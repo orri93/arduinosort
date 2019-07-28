@@ -7,7 +7,7 @@ static uint8_t tr;
 
 namespace real {
 static float tf;
-#ifdef SORT_FLOATS
+#ifndef SORT_FLOATS_DISMISS
 void insertion(float* values, const uint8_t& count) {
   for (i = 1; i < count; i++) {
     for (j = i; j > 0 && (values[j - 1] > values[j]); j--) {
@@ -21,7 +21,7 @@ void insertion(float* values, const uint8_t& count) {
 
 namespace reference {
 
-#ifdef SORT_FLOAT_REFERENCES
+#ifndef SORT_FLOAT_REFERENCES_DISMISS
 void insertion(const float* values, uint8_t* ref, const uint8_t& count) {
   for (i = 1; i < count; i++) {
     for (j = i; j > 0 && (values[ref[j - 1]] > values[ref[j]]); j--) {
@@ -38,7 +38,7 @@ void insertion(const float* values, uint8_t* ref, const uint8_t& count) {
 
 namespace byte {
 static uint8_t tb;
-#ifdef SORT_BYTES
+#ifndef SORT_BYTES_DISMISS
 void insertion(uint8_t* values, const uint8_t& count) {
   for (i = 1; i < count; i++) {
     for (j = i; j > 0 && (values[j - 1] > values[j]); j--) {
@@ -51,7 +51,7 @@ void insertion(uint8_t* values, const uint8_t& count) {
 #endif
 namespace reference {
 
-#ifdef SORT_BYTE_REFERENCES
+#ifndef SORT_BYTE_REFERENCES_DISMISS
 void insertion(const uint8_t* values, uint8_t* ref, const uint8_t& count) {
   for (i = 1; i < count; i++) {
     for (j = i; j > 0 && (values[ref[j - 1]] > values[ref[j]]); j--) {
